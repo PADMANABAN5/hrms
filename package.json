@@ -16,7 +16,7 @@
   "build": "vite build",
   "lint": "eslint",
   "serve": "vite preview",
-  "start": "serve -s dist -l $PORT"
+  "start": "vite"
 },
   "dependencies": {
     "@coreui/chartjs": "^4.1.0",
