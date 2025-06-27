@@ -1,0 +1,46 @@
+.bg-purple {
+  background-color: #5928b4;
+}
+.deductions-table tr td{
+  background-color: #fafafa !important; 
+}
+.deduct-head {
+  background-color: #c81d1d !important;
+  border-bottom: 1px solid #020202;
+}
+.earnings-table tr td {
+  background-color: #fafafa !important;
+}
+.Allowances-table tr td {
+  background-color: #fafafa !important;
+}
+.ear-table{
+  background-color: #288a53 !important;
+}
+
+
+/* Responsive adjustments if the print layout needs to differ significantly from screen */
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .payslip-pdf-content {
+    width: 210mm; /* Force A4 width for print */
+    padding: 10mm; /* Add margins for print */
+    box-shadow: none !important; /* Remove shadows for cleaner print */
+    border: none !important; /* Remove borders if not desired in print */
+  }
+  /* You might need to adjust font sizes for print if they appear too large or small */
+  .payslip-pdf-content p,
+  .payslip-pdf-content span,
+  .payslip-pdf-content td {
+    font-size: 10pt; /* Example: adjust font size for print */
+  }
+  .payslip-pdf-content h6 {
+    font-size: 12pt; /* Example: adjust font size for print */
+  }
+}
